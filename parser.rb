@@ -1,3 +1,5 @@
 def word_in_string?(word, string)
-  string.match(/#{word}\z/).nil? ? :no : :yes
+  regex = /\b?(?<![a-z])#{word}(?![a-z])\b?/
+  x = string.match regex
+  x.nil? ? :no : :yes
 end
