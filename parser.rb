@@ -1,3 +1,3 @@
 def word_in_string?(word, string)
-  # implement with your code here
+  string.split(/\s|\_|\-/).include?(word) ? :yes : :no
 end
