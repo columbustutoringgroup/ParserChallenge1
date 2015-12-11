@@ -1,3 +1,3 @@
 def word_in_string?(word, string)
-  # implement with your code here
+  string.scan(/[a-z]+/i).include?(word) ? :yes : :no
 end
