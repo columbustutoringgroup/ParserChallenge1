@@ -1,3 +1,4 @@
 def word_in_string?(word, string)
-  # implement with your code here
+  string = string.gsub(/_|-/," ")
+  /^(.*(\b#{word}\b).*)$/.match("#{string}")? :yes : :no
 end
