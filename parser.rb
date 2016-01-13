@@ -1,6 +1,6 @@
 def word_in_string?(word, string)
-  array = string.split(/[-_\s]/)
-  if array.include?(word)
+  tokensFromString = string.split(/[-_\s]/)
+  if tokensFromString.include?(word)
     return :yes
   end
   :no
