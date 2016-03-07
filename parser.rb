@@ -1,6 +1,6 @@
 def word_in_string?(word, string)
-  pattern = /([-_]#{word}|#{word}[-_]|\b#{word}\b)/
-  if pattern.match(string)
+  split = string.split(/[\s_-]/)
+  if split.include?(word)
     :yes
   else
     :no
