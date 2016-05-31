@@ -3,6 +3,7 @@ require_relative 'parser'
 require 'pry'
 
 describe "word_in_string?" do
+
   context "returns symbols :yes and :no" do
     it "should return :no for word_in_string?('grow', 'growler')" do
       expect(word_in_string?('grow', 'growler')).to eq :no
