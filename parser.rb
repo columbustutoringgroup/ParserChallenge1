@@ -1,3 +1,5 @@
 def word_in_string?(word, string)
-  # implement with your code here
+  return :yes if string.split(/[\s,_,-]/).any? {|x| x==word}
+
+  :no
 end
