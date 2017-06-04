@@ -1,3 +1,8 @@
 def word_in_string?(word, string)
-  # implement with your code here
+  split = string.split(/[\s_-]/)
+  if split.include?(word)
+    :yes
+  else
+    :no
+  end
 end
