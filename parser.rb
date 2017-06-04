@@ -1,3 +1,7 @@
 def word_in_string?(word, string)
-  # implement with your code here
+  if (/(\A|\s|_|-)#{word}(\z|\s|_|-)/ =~ string).nil?
+    :no
+  else
+    :yes
+  end
 end
