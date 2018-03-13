@@ -22,6 +22,7 @@ describe "word_in_string?" do
       ["book", "note_book-"],
       ["cat", "bodega-cat"],
       ["cat", "bodega cat"],
+      ["cat", "cat"]
     ].each do |test|
       word, string = *test
       it "should detect '#{word}' in '#{string}'" do
